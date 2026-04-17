@@ -33,4 +33,33 @@ document.addEventListener('DOMContentLoaded', () => {
         revealOnScroll.observe(el);
     });
 
+    const contactForm = document.querySelector('.contact-form');
+
+    if (contactForm) {
+        contactForm.addEventListener('submit', (event) => {
+            event.preventDefault();
+
+            const formData = new FormData(contactForm);
+            const fields = {
+                nome: (formData.get('nome') || '').toString().trim(),
+                telefone: (formData.get('telefone') || '').toString().trim(),
+                email: (formData.get('email') || '').toString().trim(),
+                servico: (formData.get('servico') || '').toString().trim(),
+                mensagem: (formData.get('mensagem') || '').toString().trim()
+            };
+
+            const lines = [
+                'Olá, vim pelo site da Webber Fundações.',
+                fields.nome && `Nome: ${fields.nome}`,
+                fields.telefone && `Telefone: ${fields.telefone}`,
+                fields.email && `E-mail: ${fields.email}`,
+                fields.servico && `Serviço: ${fields.servico}`,
+                fields.mensagem && `Mensagem: ${fields.mensagem}`
+            ].filter(Boolean);
+
+            const whatsappUrl = `https://wa.me/5541999669778?text=${encodeURIComponent(lines.join('\n'))}`;
+            window.open(whatsappUrl, '_blank', 'noopener');
+        });
+    }
+
 });
