@@ -16,7 +16,9 @@
     
     <header class="hero">
         <!-- The user's image with "Fundação" included -->
-        <div class="hero-bg" style="background-image: url('assets/images/image.png');"></div>
+        <video class="hero-bg" autoplay loop muted playsinline poster="assets/images/image.png">
+            <source src="assets/Videos/video_hero.mp4" type="video/mp4">
+        </video>
         <div class="hero-overlay"></div>
         
         <nav class="navbar animate-fade-in-down">
@@ -28,24 +30,22 @@
                     <span>WEBBER</span>
                 </a>
                 
-                <!-- Right Group for Links and Controls -->
-                <div class="nav-right-group">
-                    <!-- Links -->
-                    <ul class="nav-links">
-                        <li><a href="#sobre">História</a></li>
-                        <li><a href="#servicos">Especialidades</a></li>
-                        <li><a href="#obras">Obras</a></li>
-                    </ul>
-                    
-                    <!-- Controls -->
-                    <div class="nav-controls">
-                        <a href="https://wa.me/5541999669778" target="_blank" class="nav-whatsapp">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
-                              <path d="M11.996 1.996A10.007 10.007 0 0 0 2 12.001c0 1.761.458 3.473 1.33 5L2 22l5.06-1.336A10.038 10.038 0 0 0 12.001 22c5.525 0 10-4.475 10-10C22 6.475 17.525 1.996 11.996 1.996zm0 18.257c-1.488 0-2.951-.383-4.238-1.111l-.304-.172-3.141.829.83-3.08-.182-.3A8.259 8.259 0 0 1 4.8 12.001a8.261 8.261 0 0 1 8.249-8.256c4.549 0 8.253 3.704 8.253 8.256s-3.704 8.252-8.253 8.252zm4.536-6.177c-.249-.125-1.472-.73-1.701-.813-.23-.083-.395-.125-.562.125-.166.25-.644.813-.788.98-.146.166-.291.187-.54.062a6.762 6.762 0 0 1-1.99-1.229 7.464 7.464 0 0 1-1.378-1.713c-.146-.25-.015-.386.11-.51.113-.113.249-.292.373-.438.125-.145.166-.25.25-.416.082-.167.041-.313-.021-.438-.062-.125-.562-1.354-.77-1.854-.202-.489-.408-.423-.562-.423-.146 0-.312-.006-.478-.006a.91.91 0 0 0-.665.313c-.23.25-.873.854-.873 2.083 0 1.23.894 2.417 1.019 2.583.125.166 1.761 2.688 4.265 3.77.596.258 1.06.413 1.423.529.598.19 1.141.163 1.57.098.482-.073 1.472-.602 1.68-1.185.207-.583.207-1.083.145-1.185-.062-.102-.228-.164-.477-.29z"/>
-                            </svg> WhatsApp
-                        </a>
-                        <button class="nav-menu"><i data-lucide="menu"></i></button>
-                    </div>
+                <!-- Centered Links -->
+                <ul class="nav-links">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#sobre">História</a></li>
+                    <li><a href="#servicos">Especialidades</a></li>
+                    <li><a href="#obras">Obras</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+                
+                <!-- Right Controls -->
+                <div class="nav-controls">
+                    <a href="https://wa.me/5541999669778" target="_blank" class="nav-whatsapp">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M11.996 1.996A10.007 10.007 0 0 0 2 12.001c0 1.761.458 3.473 1.33 5L2 22l5.06-1.336A10.038 10.038 0 0 0 12.001 22c5.525 0 10-4.475 10-10C22 6.475 17.525 1.996 11.996 1.996zm0 18.257c-1.488 0-2.951-.383-4.238-1.111l-.304-.172-3.141.829.83-3.08-.182-.3A8.259 8.259 0 0 1 4.8 12.001a8.261 8.261 0 0 1 8.249-8.256c4.549 0 8.253 3.704 8.253 8.256s-3.704 8.252-8.253 8.252zm4.536-6.177c-.249-.125-1.472-.73-1.701-.813-.23-.083-.395-.125-.562.125-.166.25-.644.813-.788.98-.146.166-.291.187-.54.062a6.762 6.762 0 0 1-1.99-1.229 7.464 7.464 0 0 1-1.378-1.713c-.146-.25-.015-.386.11-.51.113-.113.249-.292.373-.438.125-.145.166-.25.25-.416.082-.167.041-.313-.021-.438-.062-.125-.562-1.354-.77-1.854-.202-.489-.408-.423-.562-.423-.146 0-.312-.006-.478-.006a.91.91 0 0 0-.665.313c-.23.25-.873.854-.873 2.083 0 1.23.894 2.417 1.019 2.583.125.166 1.761 2.688 4.265 3.77.596.258 1.06.413 1.423.529.598.19 1.141.163 1.57.098.482-.073 1.472-.602 1.68-1.185.207-.583.207-1.083.145-1.185-.062-.102-.228-.164-.477-.29z"/>
+                        </svg> WhatsApp
+                    </a>
                 </div>
             </div>
         </nav>
@@ -110,7 +110,7 @@
         <div class="achievements-grid separation-grid">
             <div class="achievements-col reveal-on-scroll delay-1">
                 <div class="achievements-card">
-                    <img src="assets/images/founder.png" alt="Fundador Webber" class="achievements-img">
+                    <img src="assets/images/engenheiros%20senior.jpg" alt="Engenheiros sênior da Webber" class="achievements-img">
                 </div>
             </div>
             <div class="achievements-col reveal-on-scroll delay-2">
@@ -121,64 +121,29 @@
         </div>
     </section>
 
-    <section id="servicos" class="section bg-dark text-white pt-xl pb-xl mt-l">
+    <section id="servicos" class="section bg-dark text-white pt-l pb-l mt-l">
         <div class="container">
-            <div class="services-wrapper-horizontal">
-                <div class="services-header-center reveal-on-scroll">
-                    <h5 class="accent-text">NOSSOS SERVIÇOS</h5>
-                    <h2 class="section-title white">Soluções de Engenharia</h2>
-                    <p class="section-desc">Fornecemos um espectro completo de serviços de arquitetura e fundação adaptados para atender às suas necessidades exclusivas.</p>
+            <div class="services-header-center reveal-on-scroll">
+                <h5 class="accent-text">NOSSOS SERVIÇOS</h5>
+                <h2 class="section-title white">Soluções de Engenharia</h2>
+                <p class="section-desc">Fornecemos um espectro completo de serviços de fundação adaptados para atender às suas necessidades exclusivas.</p>
+            </div>
+
+            <div class="services-grid reveal-on-scroll delay-1">
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="building"></i></div>
+                    <h3>Fundação em Geral</h3>
+                    <p>Desde uma casa até prédios, barracões, pontes e estradas. Contenção de muros e perfis metálicos.</p>
                 </div>
-
-                <div class="service-accordion horizontal-accordion reveal-on-scroll delay-1">
-                    <div class="accordion-item active" data-image="assets/images/hero.png">
-                        <div class="accordion-header">
-                            <span class="accordion-num">01</span>
-                            <h3>Fundação em Geral</h3>
-                            <p class="accordion-preview hidden-mobile">Desde uma casa até prédios, barracões, pontes e estradas. Contenção de muros e perfis metálicos.</p>
-                            <div class="accordion-icon"><i data-lucide="minus"></i></div>
-                        </div>
-                        <div class="accordion-body">
-                            <p class="show-mobile-only">Desde uma casa até prédios, barracões, pontes e estradas. Contenção de muros e perfis metálicos.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item" data-image="assets/images/piles.png">
-                        <div class="accordion-header">
-                            <span class="accordion-num">02</span>
-                            <h3>Estaqueamento</h3>
-                            <p class="accordion-preview hidden-mobile">Execução de estacas trado mecânico, hélice contínua e soluções profundas para máxima resistência.</p>
-                            <div class="accordion-icon"><i data-lucide="plus"></i></div>
-                        </div>
-                        <div class="accordion-body">
-                            <p class="show-mobile-only">Execução de estacas trado mecânico, hélice contínua e soluções profundas para máxima resistência.</p>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item" data-image="assets/images/precast.png">
-                        <div class="accordion-header">
-                            <span class="accordion-num">03</span>
-                            <h3>Estacas Pré Moldadas</h3>
-                            <p class="accordion-preview hidden-mobile">Cravamento com excelência, agilidade e total segurança técnica aprovada pelos melhores profissionais.</p>
-                            <div class="accordion-icon"><i data-lucide="plus"></i></div>
-                        </div>
-                        <div class="accordion-body">
-                            <p class="show-mobile-only">Cravamento com excelência, agilidade e total segurança técnica aprovada pelos melhores profissionais.</p>
-                        </div>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="triangle-right"></i></div>
+                    <h3>Estaqueamento</h3>
+                    <p>Execução de estacas trado mecânico, hélice contínua e soluções profundas para máxima resistência.</p>
                 </div>
-
-                <div class="services-image-horizontal reveal-on-scroll delay-2">
-                    <img id="dynamic-service-image" src="assets/images/hero.png" alt="Serviços Fundações Webber">
-                    <div class="floating-glass-card">
-                        <h4>A fundação do amanhã</h4>
-                        <p>Técnica e precisão que constroem a base do Paraná.</p>
-                        <ul class="check-list">
-                            <li><i data-lucide="check-circle" class="accent-icon"></i> Segurança certificada</li>
-                            <li><i data-lucide="check-circle" class="accent-icon"></i> Maquinário próprio</li>
-                            <li><i data-lucide="check-circle" class="accent-icon"></i> Engenharia especializada</li>
-                        </ul>
-                    </div>
+                <div class="service-card">
+                    <div class="service-icon"><i data-lucide="hard-hat"></i></div>
+                    <h3>Estacas Pré Moldadas</h3>
+                    <p>Cravamento com excelência, agilidade e total segurança técnica aprovada pelos melhores profissionais.</p>
                 </div>
             </div>
         </div>
@@ -214,7 +179,7 @@
         <div class="container section-header flex-between reveal-on-scroll" style="margin-bottom: 2rem;">
             <div>
                 <h5 class="accent-text">PORTFÓLIO</h5>
-                <h2 class="section-title">Nossas Frentes<br>de Trabalho</h2>
+                <h2 class="section-title">Nossas Obras</h2>
             </div>
             <a href="https://instagram.com/webberfundacoes" target="_blank" class="btn btn-primary">Siga o Instagram <i data-lucide="instagram"></i></a>
         </div>
@@ -253,7 +218,7 @@
                 </div>
                 <div class="project-card stagger-4">
                     <div class="project-img-wrap">
-                        <img src="assets/images/founder.png" alt="Obras de Arte">
+                        <img src="assets/images/engenheiros%20senior.jpg" alt="Engenheiros sênior">
                         <span class="project-tag">Especial</span>
                     </div>
                     <div class="project-info">
@@ -265,14 +230,8 @@
         </div>
     </section>
 
-    <footer class="site-footer">
+    <footer id="contato" class="site-footer">
         <div class="container reveal-on-scroll">
-            <div class="cta-massive">
-                <div class="cta-inner">
-                    <h2>VAMOS CONVERSAR</h2>
-                </div>
-            </div>
-            
             <div class="footer-bottom">
                 <div class="footer-brand">
                     <a href="#" class="logo text-white">
@@ -296,6 +255,12 @@
             </div>
         </div>
     </footer>
+
+    <a href="https://wa.me/5541999669778" target="_blank" class="whatsapp-float" aria-label="Fale conosco pelo WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M11.996 1.996A10.007 10.007 0 0 0 2 12.001c0 1.761.458 3.473 1.33 5L2 22l5.06-1.336A10.038 10.038 0 0 0 12.001 22c5.525 0 10-4.475 10-10C22 6.475 17.525 1.996 11.996 1.996zm0 18.257c-1.488 0-2.951-.383-4.238-1.111l-.304-.172-3.141.829.83-3.08-.182-.3A8.259 8.259 0 0 1 4.8 12.001a8.261 8.261 0 0 1 8.249-8.256c4.549 0 8.253 3.704 8.253 8.256s-3.704 8.252-8.253 8.252zm4.536-6.177c-.249-.125-1.472-.73-1.701-.813-.23-.083-.395-.125-.562.125-.166.25-.644.813-.788.98-.146.166-.291.187-.54.062a6.762 6.762 0 0 1-1.99-1.229 7.464 7.464 0 0 1-1.378-1.713c-.146-.25-.015-.386.11-.51.113-.113.249-.292.373-.438.125-.145.166-.25.25-.416.082-.167.041-.313-.021-.438-.062-.125-.562-1.354-.77-1.854-.202-.489-.408-.423-.562-.423-.146 0-.312-.006-.478-.006a.91.91 0 0 0-.665.313c-.23.25-.873.854-.873 2.083 0 1.23.894 2.417 1.019 2.583.125.166 1.761 2.688 4.265 3.77.596.258 1.06.413 1.423.529.598.19 1.141.163 1.57.098.482-.073 1.472-.602 1.68-1.185.207-.583.207-1.083.145-1.185-.062-.102-.228-.164-.477-.29z"/>
+        </svg>
+    </a>
 
     <script src="script.js"></script>
     <script>
