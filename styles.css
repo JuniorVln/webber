@@ -200,7 +200,7 @@ h1, h2, h3, h4, h5, h6 {
     justify-self: center;
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 2.25rem;
 }
 
 .nav-links a {
@@ -209,6 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--color-white);
     transition: var(--transition-fast);
     text-decoration: none;
+    letter-spacing: 0.05em;
     white-space: nowrap;
 }
 
@@ -910,7 +911,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .project-img-wrap img {
+    width: 100%;
     height: 100%;
+    object-fit: cover;
     transition: var(--transition-smooth);
 }
 
@@ -1355,7 +1358,7 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     border-radius: var(--radius-lg);
     overflow: hidden;
-    height: 340px;
+    height: 460px;
     background-color: #e5e5e5;
 }
 
@@ -1363,7 +1366,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center top;
+    object-position: center center;
     display: block;
     transition: var(--transition-smooth);
 }
@@ -1372,10 +1375,7 @@ h1, h2, h3, h4, h5, h6 {
     transform: scale(1.03);
 }
 
-/* Enquadramento específico: foto do fundador (coluna esquerda) */
-.separation-grid .achievements-col:first-child .achievements-img {
-    object-position: center 15%;
-}
+
 
 .achievements-tag {
     position: absolute;
