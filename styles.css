@@ -189,11 +189,19 @@ h1, h2, h3, h4, h5, h6 {
     justify-self: start;
     display: inline-flex;
     align-items: center;
-    gap: 0.5rem;
-    font-weight: 800;
-    font-size: 1.35rem;
-    color: var(--color-white);
     text-decoration: none;
+}
+
+.logo-img {
+    height: 24px; /* Minimalist size for a premium, high-end feel */
+    width: auto;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.1));
+    transition: var(--transition-fast);
+}
+
+.logo:hover .logo-img {
+    transform: scale(1.05);
 }
 
 .nav-links {
